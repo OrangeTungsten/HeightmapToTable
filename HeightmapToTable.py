@@ -1,8 +1,27 @@
+# ╔══════════════════════════════════════════════════════════════╗
+# ║              HEIGHTMAP TO XYZ CONVERTER                      ║
+# ╠══════════════════════════════════════════════════════════════╣
+# ║  Description : Converts grayscale heightmap images into      ║
+# ║                XYZ coordinate tables (CSV / XLSX)            ║
+# ║  Author      : TAvram Kovačević                              ║
+# ║  Created     : Jan, 2026                                     ║
+# ║  Version     : 1.0.0                                         ║
+# ║  License     : MIT                                           ║
+# ╠══════════════════════════════════════════════════════════════╣
+# ║  Dependencies: streamlit, numpy, pandas, pillow,             ║
+# ║                xlsxwriter                                    ║
+# ╚══════════════════════════════════════════════════════════════╝
+
+import streamlit as st
+...
+
 import streamlit as st
 import numpy as np
 import pandas as pd
 from PIL import Image
 import io
+import os
+
 
 # ─────────────────────────────────────────────
 #  LANGUAGE PACK
@@ -140,10 +159,11 @@ if uploaded_file is not None:
                 st.dataframe(df_result)
 
             csv = df_result.to_csv(index=False).encode('utf-8')
+            base_name = os.path.splitext(uploaded_file.name)[0]
             st.download_button(
                 label=t("btn_csv"),
                 data=csv,
-                file_name="heightmap_coords.csv",
+                file_name=f"{base_name}.csv",
                 mime="text/csv",
             )
 
@@ -154,7 +174,7 @@ if uploaded_file is not None:
                 st.download_button(
                     label=t("btn_excel"),
                     data=output.getvalue(),
-                    file_name="heightmap_coords.xlsx",
+                    file_name=f"{base_name}.xlsx",
                     mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
                 )
             except ImportError:
