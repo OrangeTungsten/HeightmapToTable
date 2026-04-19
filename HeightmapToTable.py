@@ -3,9 +3,9 @@
 # ╠══════════════════════════════════════════════════════════════╣
 # ║  Description : Converts grayscale heightmap images into      ║
 # ║                XYZ coordinate tables (CSV / XLSX)            ║
-# ║  Author      : TAvram Kovačević                              ║
+# ║  Author      : Avram Kovačević                               ║
 # ║  Created     : Jan, 2026                                     ║
-# ║  Version     : 1.0.0                                         ║
+# ║  Version     : 1.0                                           ║
 # ║  License     : MIT                                           ║
 # ╠══════════════════════════════════════════════════════════════╣
 # ║  Dependencies: streamlit, numpy, pandas, pillow,             ║
