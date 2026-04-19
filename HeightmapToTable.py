@@ -13,7 +13,7 @@ LANG = {
         "title":            "🗺️ Heightmap to XYZ Table",
         "description":      "Upload a grayscale image to generate 3D coordinates.",
         "file_uploader":    "Choose an image (PNG, JPG)",
-        "gid_x":           "Number of points X",
+        "grid_x":           "Number of points X",
         "grid_y":           "Number of points Y",
         "z_min":            "Z minimum",
         "z_max":            "Z maximum",
