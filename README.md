@@ -5,4 +5,6 @@ Useful for terrain analysis, GIS workflows, extraction data from existing visual
 
 You can run from [HERE](https://heightmaptotable-oaygsdq2danukerfzahxhy.streamlit.app/)
 
-<img width="1102" height="1600" alt="HM" src="https://github.com/user-attachments/assets/580e3b87-b345-4a65-93ba-abb6ec48653e" />
+<img width="1068" height="1600" alt="HM" src="https://github.com/user-attachments/assets/091cc18a-609d-4937-85e4-ffac02acf510" />
+
+
