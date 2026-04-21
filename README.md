@@ -4,3 +4,5 @@ A Streamlit-based tool for extracting elevation data from heightmap images. User
 Useful for terrain analysis, GIS workflows, extraction data from existing visualizations and 3D modeling preparation.
 
 You can run from [HERE](https://heightmaptotable-oaygsdq2danukerfzahxhy.streamlit.app/)
+
+<img width="1102" height="1600" alt="HM" src="https://github.com/user-attachments/assets/580e3b87-b345-4a65-93ba-abb6ec48653e" />
