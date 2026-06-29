@@ -89,6 +89,7 @@ def t(key, **kwargs):
 def process_heightmap(image_file, grid_x, grid_y, z_min, z_max, z_decimals=4, start_from_zero=True):
     img = Image.open(image_file).convert('L')
     img = img.resize((grid_x, grid_y), resample=Image.Resampling.LANCZOS)
+    img = img.transpose(Image.Transpose.FLIP_TOP_BOTTOM);
 
     z_values = np.array(img).astype(float)
     z_mapped = z_min + (z_values / 255.0) * (z_max - z_min)
